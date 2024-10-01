@@ -1,8 +1,5 @@
 services:
   php-apache:
-    build:
-      context: .
-      dockerfile: Dockerfile
     image: cjpjxjx/php-apache:latest
     container_name: php-apache
     restart: unless-stopped
