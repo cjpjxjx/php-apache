@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: php-apache
+    image: cjpjxjx/php-apache:latest
     container_name: php-apache
     restart: unless-stopped
     ports:
