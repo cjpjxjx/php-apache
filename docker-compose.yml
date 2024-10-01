@@ -1,0 +1,14 @@
+services:
+  php-apache:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: php-apache
+    container_name: php-apache
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    environment:
+      TZ: Asia/Shanghai
+    volumes:
+      - ./html:/var/www/html
